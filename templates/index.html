@@ -18,6 +18,12 @@
         <link rel="stylesheet" href="../static/css/style.css" />
     </head>
     <body>
+        <button class="aside-button">
+            <i class="fa-solid fa-burger"></i>
+        </button>
+        <button class="aside-cross-button">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
         <aside>
             <h2>ClothesInventory</h2>
             <nav>
@@ -43,7 +49,7 @@
             <div class="main_content">
                 <h1>Your Subscription Plan</h1>
                 <p class="plan_status">Pro &bull; Active</p>
-                <button>Upgrade Plan</button>
+                <button id="upgrade_plan_button">Upgrade Plan</button>
                 <h2>Current Subscription</h2>
                 <div class="current_plan_card card">
                     <div class="icon_container">
@@ -148,7 +154,10 @@
                         <h4>Auto-Renew</h4>
                         <p>Automatically renew subscription</p>
                     </div>
-                    <div class="toggle_switch">Toggle Switch</div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" />
+                        <span class="slider round"></span>
+                    </label>
                 </div>
                 <h2>Support</h2>
                 <div class="support_content">
@@ -162,5 +171,6 @@
                 </div>
             </div>
         </main>
+        <script src="../static/js/script.js"></script>
     </body>
 </html>
